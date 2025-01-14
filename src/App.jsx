@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <AppProvider>
-        <div className=" w-screen h-screen">
+
           <Layout />
-        </div>
+
       </AppProvider>
     </>
   );

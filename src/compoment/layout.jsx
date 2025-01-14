@@ -38,26 +38,27 @@ export const Layout = () => {
   });
 
   return (
-    <div className="flex h-full w-full">
+    <div className="relative flex flex-col w-full h-screen">
       {/* Sidebar */}
       <div
-        className={`bg-blue-500 p-4 transition-all duration-300 ${
-          isSidebarOpen || isLargeScreen ? "block" : "hidden"
-        } md:block w-64 h-full`}
+        className={`bg-blue-500 p-4 transition-all duration-500 transform ${
+          isSidebarOpen || isLargeScreen
+            ? "absolute top-0 left-0 h-full w-64 opacity-100 translate-x-0 z-50"
+            : "absolute top-0 left-0 h-full w-64 opacity-0 -translate-x-full"
+        }`}
       >
         <Siderbar />
       </div>
 
       {/* Main Content */}
       <div
-        className="flex-1 bg-cover bg-center relative"
+        className="flex-grow bg-cover bg-center relative flex justify-center items-center"
         style={{ backgroundImage: `url(${logo})` }}
       >
-    
         {/* Typewriter Text */}
-        <span className="text-white text-3xl font-bold justify-center items-center flex h-full">
-          {text || "Loading..."}
-        </span>
+        <span className="text-white text-3xl font-bold">{text || "Loading..."}</span>
+
+        {/* Toggle Sidebar Button (on small screens) */}
         {!isLargeScreen && (
           <div className="absolute top-4 right-4">
             <IconButton
@@ -68,6 +69,11 @@ export const Layout = () => {
             />
           </div>
         )}
+      </div>
+
+      {/* Bottom Div */}
+      <div className="bg-cyan-50 w-full h-32">
+        {/* Add content here if necessary */}
         <ListInformation />
       </div>
     </div>
