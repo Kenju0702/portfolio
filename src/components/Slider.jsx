@@ -2,7 +2,7 @@ import React from "react";
 import {useTypewriter, Cursor} from "react-simple-typewriter";
 import {FaFacebook, FaGithub} from "react-icons/fa";
 import {MdOutlineAlternateEmail} from "react-icons/md";
-// import logo from "../assets/nqt.jpg";
+import logo from "../assets/nqt.jpg";
 const Slider = () => {
   const [text] = useTypewriter({
     words: ["Front-end Developer", "UI Designer", "React Enthusiast"],
@@ -13,11 +13,25 @@ const Slider = () => {
   });
   return (
     <div
-      className="relative w-full h-3/4 "
+      className="relative w-full h-3/4 z-10"
       style={{paddingTop: "56.25%", background: "#fff"}}
     >
       <div className="imgslider absolute w-full h-full top-0 right-0 left-0 flex justify-end items-end bg-gray-500">
+        <div className="text-center flex flex-col gap-3 justify-center w-[50%] h-full items-center">
+          <img
+            src={logo}
+            alt="Avatar"
+            className="w-48 h-48 rounded-full mb-8 border-4 border-purple-500 p-2 shadow-lg mx-auto transition-transform duration-300 hover:scale-105"
+          />
 
+          <h2 className="text-xl font-bold text-white p-2">
+            My name is Nguyen Quang Tien
+          </h2>
+          <p className="text-gray-300 text-xl opacity-80 py-2">
+            Currently, I am in my final year at the university. (Just one
+            subjects left before I graduate!){" "}
+          </p>
+        </div>
       </div>
       <div
         className="bg-gray-950 opacity-90 absolute top-0 w-1/2 h-full"

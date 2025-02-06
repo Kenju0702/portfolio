@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+
+/* nav */
+.nav-a{
+    @apply text-white; /* Áp dụng màu chữ và hover */
+
+}
+.nav-a:hover{
+    @apply bg-white hover:text-purple-500;
+
+}
+
+.nav-li{
+    @apply my-6 mx-12 text-center;
+}
+
+/* project */
+.project-Text{
+    @apply md:order-1 md:mx-auto md:mt-2 xl:absolute left-0 p-6 md:p-10 max-w-lg  text-justify bg-gradient-to-br  from-gray-800 to-gray-500 backdrop-blur-lg rounded-lg text-white;
+
+
+}
+.project{
+    @apply relative flex max-w-6xl w-full items-center flex-wrap
+}
