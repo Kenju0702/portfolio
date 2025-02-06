@@ -5,6 +5,8 @@ import CarrerObjective from "./components/CarrerObjective";
 import ContentSection from "./components/ContentSection";
 import AboutDetail from "./components/AboutDetail";
 import SkillDetail from "./components/Skilldetail";
+import "./index.css";
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -53,69 +55,62 @@ const App = () => {
     {icon: GrMysql, title: "MySQL", color: "#4479A1"},
   ];
   return (
-    <div
-      className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg
+    <>
+      <Nav />
+      <div className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg text-white ">
+        <div className="slider-carrer  w-full">
+          <Slider />
+          <CarrerObjective />
 
- text-white "
-    >
-      <div className=" nav fixed w-full z-10">
-        <Nav />
-      </div>
-      <div className="slider-carrer  w-full">
-        <Slider />
-        <CarrerObjective />
-
-        <div className="about w-full">
-          <div className="w-1/2 mx-auto text-center ">
-            <ContentSection
-              title={"About me"}
-              content={
-                " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
-              }
-              button={"read more"}
-            />
-            <AboutDetail />
-            <ContentSection
-              title={"skill"}
-              content={
-                " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
-              }
-              button={"read more"}
-            />
-            <h1 className="uppercase text-2xl font-bold text-start ">
-              using now :
-            </h1>
-            <SkillDetail skills={skillsData} />
-            <h1 className="uppercase text-2xl font-bold text-start ">
-              Learning :
-            </h1>
-            <SkillDetail skills={skillsLearning} />
-            <h1 className="uppercase text-2xl font-bold text-start ">
-              Other Skills :
-            </h1>
-            <SkillDetail skills={otherSkills} />
+          <div className="about w-full">
+            <div className="w-1/2 mx-auto text-center ">
+              <ContentSection
+                title={"About"}
+                content={
+                  " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
+                }
+              />
+              <AboutDetail />
+              <ContentSection
+                title={"skill"}
+                content={
+                  " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
+                }
+              />
+              <h1 className="uppercase text-2xl font-bold text-start ">
+                using now :
+              </h1>
+              <SkillDetail skills={skillsData} />
+              <h1 className="uppercase text-2xl font-bold text-start ">
+                Learning :
+              </h1>
+              <SkillDetail skills={skillsLearning} />
+              <h1 className="uppercase text-2xl font-bold text-start ">
+                Other Skills :
+              </h1>
+              <SkillDetail skills={otherSkills} />
+            </div>
           </div>
         </div>
-      </div>
-      <div className=" project bg-black text-center ">
-        <ContentSection title={"Portfolio"} />
-      </div>
-      <div className="w-1/2 mx-auto text-center">
-        <Project />
+        <div className=" project bg-black text-center ">
+          <ContentSection title={"Portfolio"} />
+        </div>
+        <div className="w-1/2 mx-auto text-center">
+          <Project />
 
-        <ContentSection
-              title={"Contact me"}
-              content={
-                " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
-              }
-              button={"read more"}
-            />
-            <Formcontact/>
+          <ContentSection
+            title={"Contact "}
+            content={
+              " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
+            }
+          />
+          <Formcontact />
+        </div>
+        <div className="footer bg-black">
+          <Footerpage />
+        </div>
       </div>
-      <div className="footer bg-black">
-        <Footerpage/>
-      </div>
-    </div>
+    </>
   );
 };
 
