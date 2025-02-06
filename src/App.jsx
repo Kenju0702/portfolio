@@ -26,6 +26,7 @@ import {
 import {CiDatabase} from "react-icons/ci";
 import {GrMysql} from "react-icons/gr";
 import {Project} from "./components/Project";
+import Formcontact from "./components/Formcontact";
 
 const App = () => {
   const skillsData = [
@@ -54,8 +55,7 @@ const App = () => {
     <div
       className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg
 
-
- text-white"
+ text-white "
     >
       <div className="fixed w-full z-10">
         <Nav />
@@ -101,6 +101,15 @@ const App = () => {
       </div>
       <div className="w-1/2 mx-auto text-center">
         <Project />
+
+        <ContentSection
+              title={"Contact me"}
+              content={
+                " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
+              }
+              button={"read more"}
+            />
+            <Formcontact/>
       </div>
     </div>
   );
