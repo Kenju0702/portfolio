@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/hdngt.jpg";
+import logo from "../assets/blob1.jpg";
 
 const Nav = () => {
   return (
