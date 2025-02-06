@@ -27,6 +27,7 @@ import {CiDatabase} from "react-icons/ci";
 import {GrMysql} from "react-icons/gr";
 import {Project} from "./components/Project";
 import Formcontact from "./components/Formcontact";
+import Footerpage from "./components/Footer";
 
 const App = () => {
   const skillsData = [
@@ -57,14 +58,14 @@ const App = () => {
 
  text-white "
     >
-      <div className="fixed w-full z-10">
+      <div className=" nav fixed w-full z-10">
         <Nav />
       </div>
-      <div className="w-full">
+      <div className="slider-carrer  w-full">
         <Slider />
         <CarrerObjective />
 
-        <div className="w-full">
+        <div className="about w-full">
           <div className="w-1/2 mx-auto text-center ">
             <ContentSection
               title={"About me"}
@@ -96,7 +97,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black text-center ">
+      <div className=" project bg-black text-center ">
         <ContentSection title={"Portfolio"} />
       </div>
       <div className="w-1/2 mx-auto text-center">
@@ -110,6 +111,9 @@ const App = () => {
               button={"read more"}
             />
             <Formcontact/>
+      </div>
+      <div className="footer bg-black">
+        <Footerpage/>
       </div>
     </div>
   );
