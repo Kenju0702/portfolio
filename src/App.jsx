@@ -92,7 +92,7 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className=" project bg-black text-center ">
+        <div className="  bg-black text-center md:mx-auto md:w-full mb-20">
           <ContentSection title={"Portfolio"} />
         </div>
         <div className="w-1/2 mx-auto text-center">
@@ -100,9 +100,7 @@ const App = () => {
 
           <ContentSection
             title={"Contact "}
-            content={
-              " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
-            }
+            content={"Please provide your name, email, and message."}
           />
           <Formcontact />
         </div>

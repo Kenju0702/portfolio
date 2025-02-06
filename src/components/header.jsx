@@ -1,20 +1,23 @@
 import React from "react";
 import logo from "../assets/blob1.jpg";
+import { IoMdMenu } from "react-icons/io";
 
 const Nav = () => {
   return (
     <div className="fixed top-0 left-0 flex justify-between bg-black w-full z-10">
-      <div className="w-1/4 flex justify-center">
+      <div className="w-1/4 hidden  md:flex justify-center">
         <a href="#">
           <img src={logo} alt="logo" className="w-16 h-16 my-1" />
         </a>
       </div>
-      <div className="w-3/4">
-        <ul className="flex justify-center items-center h-full">
+      <div className="md:w-3/4 w-full">
+      <div className="p-6 md:hidden" ><a href=""></a><IoMdMenu className="text-white float-right text-3xl" />
+        </div>
+        <ul className="md:flex block justify-center items-center h-full">
           <li className="nav-li">
             <a
               href=""
-              className="nav-a text-base bg-black text-white rounded-full py-2 px-4"
+              className="nav-a "
             >
               About
             </a>
@@ -22,7 +25,7 @@ const Nav = () => {
           <li className="nav-li">
             <a
               href=""
-              className=" nav-a text-base bg-black text-white rounded-full py-2 px-4 "
+              className=" nav-a "
             >
               Skills
             </a>
@@ -30,7 +33,7 @@ const Nav = () => {
           <li className="nav-li">
             <a
               href=""
-              className=" nav-a text-base bg-black text-white rounded-full py-2 px-4 "
+              className=" nav-a  "
             >
               Portfolio
             </a>
@@ -38,7 +41,7 @@ const Nav = () => {
           <li className="nav-li">
             <a
               href=""
-              className=" nav-a text-base bg-black text-white rounded-full py-2 px-4"
+              className=" nav-a"
             >
               Contact
             </a>

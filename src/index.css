@@ -3,24 +3,41 @@
 
 /* nav */
 .nav-a{
-    @apply text-white; /* Áp dụng màu chữ và hover */
+    @apply text-base w-full inline-block bg-black text-white  py-2 px-4 md:border-none md:border-white border-b-2; /* Áp dụng màu chữ và hover */
 
 }
 .nav-a:hover{
-    @apply bg-white hover:text-purple-500;
+    @apply md:bg-white md:hover:text-purple-500 md:rounded-full;
 
 }
 
 .nav-li{
-    @apply my-6 mx-12 text-center;
+    @apply my-6 mx-6 lg:mx-12 text-center block;
 }
 
 /* project */
 .project-Text{
-    @apply md:order-1 md:mx-auto md:mt-2 xl:absolute left-0 p-6 md:p-10 max-w-lg  text-justify bg-gradient-to-br  from-gray-800 to-gray-500 backdrop-blur-lg rounded-lg text-white;
+    @apply   md:order-1 p-6 md:max-w-full 2xl:max-w-100 max-w-full text-justify bg-gradient-to-br  from-gray-800 to-gray-500 backdrop-blur-lg rounded-lg text-white;
 
 
 }
+
+
+.img-project{
+    @apply  w-full flex 
+}
+
 .project{
     @apply relative flex max-w-6xl w-full items-center flex-wrap
+}
+
+@media (max-width: 1565px) {
+    .project-Text {
+        padding: 1.5rem; /* Tương đương p-6 */
+        text-align: justify;
+        background: linear-gradient(to bottom right, #1f2937, #6b7280); /* from-gray-800 to-gray-500 */
+        backdrop-filter: blur(10px);
+        border-radius: 0.5rem; /* rounded-lg */
+        color: white;
+    }
 }
