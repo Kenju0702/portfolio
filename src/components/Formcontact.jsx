@@ -3,7 +3,7 @@ import React from "react";
 const Formcontact = () => {
   return (
     <div className=" ">
-      <form action="" className="grid grid-cols-1 py-4 gap-8">
+      <form action="" className="grid grid-cols-1 py-4 gap-8 md:px-0 px-2 md:mt-0 mt-8">
         <div className="grid grid-cols-2 gap-8">
           <input type="text" placeholder="Name" className="border-l-2 border-b-2 border-white w-full  py-3 px-2 focus:outline-none" />
           <input type="email" placeholder="Email" className="border-l-2 border-b-2 border-white  w-full py-3 px-2" />

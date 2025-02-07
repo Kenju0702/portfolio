@@ -6,35 +6,31 @@ import {PiGearSixThin} from "react-icons/pi";
 const AboutDetail = () => {
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 text-justify gap-12">
+      <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 text-start gap-12">
         <div className="mt-8">
-          <h1 className="text-3xl font-bold tracking-wider relative uppercase  ">
+          <h1 className="md:px-0 px-2 text-2xl font-bold tracking-wider relative uppercase  ">
             {" "}
             <MdOutlineDesignServices className="absolute opacity-10 font-light text-8xl -top-11 -left-10" />
-            Desgin
+            Hobbies
           </h1>
-          <p className="text-lg mt-6">
+          <p className="md:text-lg mt-6 md:px-0 px-4">
             {" "}
-            i can design the site based on your need and suggestions . i can
-            also design the site from scratch and consult you during the job
+            playing games, listening to music, reading books, and doing sports.{" "}
           </p>
         </div>
         <div className="mt-8">
-          <h1 className="text-3xl font-bold tracking-wider relative uppercase  ">
-            {" "}
+        <h1 className="md:px-0 px-2 text-2xl font-bold tracking-wider relative uppercase  ">
+        {" "}
             <HiOutlineWrenchScrewdriver className="absolute opacity-10 font-light text-8xl -top-11 -left-10" />
-            Development
+             soft skills{" "}
           </h1>
-          <p className="text-lg mt-6">
+          <p className="md:text-lg mt-6 md:px-0 px-4 ">
             {" "}
-            i can design the site based on your need and suggestions . i can
-            also design the site from scratch and consult you during the job
+            Good communication,effective teamwork, adaptability, and
+            flexibility.{" "}
           </p>
         </div>
-
       </div>
-      
-      
     </>
   );
 };

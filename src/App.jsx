@@ -63,11 +63,10 @@ const App = () => {
           <CarrerObjective />
 
           <div className="about w-full">
-            <div className="w-1/2 mx-auto text-center ">
+            <div className="md:w-1/2 mx-auto text-center ">
               <ContentSection
                 title={"About"}
-                content={
-                  " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
+                content={"My name is Nguyen Quang Tien, and I am currently a student majoring in Information Technology at Saigon University (SGU), living in Ho Chi Minh City."
                 }
               />
               <AboutDetail />
@@ -77,25 +76,25 @@ const App = () => {
                   " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
                 }
               />
-              <h1 className="uppercase text-2xl font-bold text-start ">
+              <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
                 using now :
               </h1>
               <SkillDetail skills={skillsData} />
-              <h1 className="uppercase text-2xl font-bold text-start ">
+              <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
                 Learning :
               </h1>
               <SkillDetail skills={skillsLearning} />
-              <h1 className="uppercase text-2xl font-bold text-start ">
+              <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
                 Other Skills :
               </h1>
               <SkillDetail skills={otherSkills} />
             </div>
           </div>
         </div>
-        <div className="  bg-black text-center md:mx-auto md:w-full mb-20">
-          <ContentSection title={"Portfolio"} />
+        <div className=" bg-black text-center md:mx-auto md:w-full mb-20">
+          <ContentSection title={"Portfolio"}/>
         </div>
-        <div className="w-1/2 mx-auto text-center">
+        <div className="md:w-1/2 mx-auto text-center">
           <Project />
 
           <ContentSection

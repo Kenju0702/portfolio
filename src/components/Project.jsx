@@ -2,7 +2,7 @@ import React from "react";
 import "../index.css";
 export const Project = () => {
   return (
-    <div className="w-full flex flex-col gap-16">
+    <div className="w-full flex flex-col gap-16 md:px-0 px-2">
       <div className=" project ">
         {/* Phần Text - Đè lên Ảnh */}
         <div className=" project-Text 2xl:absolute 2xl:left-0">
@@ -55,7 +55,7 @@ export const Project = () => {
           <h4 className="text-purple-400 font-bold uppercase tracking-wide">
             Featured Project
           </h4>
-          <h1 className="2xl:text-xl text-2xl font-extrabold my-2">VietGroupNet</h1>
+          <h1 className="2xl:text-xl text-2xl font-extrabold my-2">VietgroupEduNet</h1>
           <p className="text-base leading-relaxed ">
             A web app for visualizing personalized Spotify data. View your top
             artists, top tracks, recently played tracks, and detailed audio

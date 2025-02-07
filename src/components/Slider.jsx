@@ -17,24 +17,24 @@ const Slider = () => {
       style={{paddingTop: "56.25%", background: "#fff"}}
     >
       <div className=" imgslider absolute w-full h-full top-0 right-0 left-0 flex justify-end items-end bg-gray-500">
-        <div className="  text-center flex flex-col gap-3 justify-center w-[50%] h-full items-center">
+        <div className="  text-center flex flex-col gap-3 justify-center md:w-[50%] w-full h-full items-center">
           <img
             src={logo}
             alt="Avatar"
-            className=" mt-8 lg:mt-0 w-32 h-32 lg:w-48 lg:h-48 rounded-full mb-8 border-4 border-purple-500 p-2 shadow-lg mx-auto transition-transform duration-300 hover:scale-105"
+            className=" mt-8 lg:mt-0 w-32 h-32 md:w-48 md:h-48 rounded-full md:mb-8 border-4 border-purple-500 p-2 shadow-lg mx-auto transition-transform duration-300 hover:scale-105"
           />
 
-          <h2 className="text-xl font-bold text-white  p-0 lg:p-2">
+          <h2 className="md:text-xl font-bold text-white p-0 lg:p-2">
             My name is Nguyen Quang Tien
           </h2>
-          <p className="text-gray-300 text-xl opacity-80 lg:py-2">
+          <p className="md:block hidden text-gray-300 text-xl opacity-80 lg:py-2">
             Currently, I am in my final year at the university. (Just one
             subjects left before I graduate!){" "}
           </p>
         </div>
       </div>
       <div
-        className="bg-gray-950 opacity-90 absolute top-0 w-1/2 h-full"
+        className="md:block hidden bg-gray-950 opacity-90 absolute top-0 w-1/2 h-full"
         style={{clipPath: "polygon(0 0, 85% 0px, 100% 100%, 0% 100%)"}}
       >
         <div className="flex justify-center mt-18 lg:mt-4 flex-col  h-full w-full items-center lg:gap-4">
