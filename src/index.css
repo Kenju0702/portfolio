@@ -3,7 +3,7 @@
 
 /* nav */
 .nav-a{
-    @apply text-base w-full   md:bg-black md:text-white font-bold text-purple-500  py-2 px-4 md:border-none md:border-white border-b-2; /* Áp dụng màu chữ và hover */
+    @apply text-base w-full  inline-block md:bg-black md:text-white font-bold text-purple-500  py-2 px-4 md:border-none md:border-white border-b-2; /* Áp dụng màu chữ và hover */
 
 }
 
