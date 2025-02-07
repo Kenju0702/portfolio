@@ -6,11 +6,14 @@
     @apply text-base w-full inline-block  md:bg-black md:text-white font-bold text-purple-500  py-2 px-4 md:border-none md:border-white border-b-2; /* Áp dụng màu chữ và hover */
 
 }
+
 .nav-a:hover{
-    @apply md:bg-white md:hover:text-purple-500 md:rounded-full;
+    @apply  md:hover:text-purple-500 md:rounded-full;
 
 }
-
+button{
+    @apply md:hover:text-purple-500
+}
 .nav-li{
     @apply my-6 mx-6 lg:mx-12 text-center block;
 }
@@ -29,6 +32,10 @@
 
 .project{
     @apply relative flex max-w-6xl w-full items-center flex-wrap
+}
+
+.footer-icon{
+    @apply hover:opacity-60
 }
 
 @media (max-width: 1565px) {

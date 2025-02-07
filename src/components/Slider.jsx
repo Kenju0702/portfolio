@@ -2,7 +2,7 @@ import React from "react";
 import {useTypewriter, Cursor} from "react-simple-typewriter";
 import {FaFacebook, FaGithub} from "react-icons/fa";
 import {MdOutlineAlternateEmail} from "react-icons/md";
-import logo from "../assets/nqt.jpg";
+import logo from "../assets/tuitentien.jpg";
 const Slider = () => {
   const [text] = useTypewriter({
     words: ["Front-end Developer", "UI Designer", "React Enthusiast"],

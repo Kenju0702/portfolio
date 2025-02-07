@@ -7,9 +7,9 @@ const CarrerObjective = () => {
       className=" lg:text-xl text-lg relative text-white bg-black py-10 flex flex-col items-start bg-cover bg-center"
        // Inline style to apply the image
     >
-      <div className="md:w-[60%] mx-16  ">
-        <h1 className="font-bold md:text-2xl lg:text-3xl">Carrer Objective</h1>
-        <p className="my-4 md:font-medium">
+      <div className="md:w-[60%] md:mx-16   ">
+        <h1 className="font-bold md:text-2xl lg:text-3xl mx-2 md:mx-0">Carrer Objective</h1>
+        <p className="my-4 md:font-medium mx-4 md:mx-0">
           My primary goal is to become a Fullstack Developer in the e-commerce
           field. I am committed to mastering both front-end and back-end
           technologies like JavaScript, React.js, Node.js, and SQL to build

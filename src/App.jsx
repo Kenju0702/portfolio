@@ -57,7 +57,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <div className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg text-white ">
+      <div className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg text-white w-full">
         <div className="slider-carrer  w-full">
           <Slider />
           <CarrerObjective />

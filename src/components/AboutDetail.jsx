@@ -8,23 +8,23 @@ const AboutDetail = () => {
     <>
       <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 text-start gap-12">
         <div className="mt-8">
-          <h1 className="md:px-0 px-2 text-2xl font-bold tracking-wider relative uppercase  ">
+          <h1 className=" px-2 text-2xl font-bold tracking-wider relative uppercase  ">
             {" "}
             <MdOutlineDesignServices className="absolute opacity-10 font-light text-8xl -top-11 -left-10" />
             Hobbies
           </h1>
-          <p className="md:text-lg mt-6 md:px-0 px-4">
+          <p className="md:text-lg mt-6 px-4">
             {" "}
             playing games, listening to music, reading books, and doing sports.{" "}
           </p>
         </div>
         <div className="mt-8">
-        <h1 className="md:px-0 px-2 text-2xl font-bold tracking-wider relative uppercase  ">
+        <h1 className="px-2 text-2xl font-bold tracking-wider relative uppercase  ">
         {" "}
             <HiOutlineWrenchScrewdriver className="absolute opacity-10 font-light text-8xl -top-11 -left-10" />
              soft skills{" "}
           </h1>
-          <p className="md:text-lg mt-6 md:px-0 px-4 ">
+          <p className="md:text-lg mt-6  px-4 ">
             {" "}
             Good communication,effective teamwork, adaptability, and
             flexibility.{" "}
