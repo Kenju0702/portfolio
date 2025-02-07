@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import logo from "../assets/blob1.jpg";
 import { IoMdMenu } from "react-icons/io";
 
 const Nav = () => {
+  const [isDivVisible, setIsDivVisible] = useState(false);
+  const handleClick = (event) => {
+    event.preventDefault(); 
+    setIsDivVisible((prevState) => !prevState);
+
+  };
   return (
     <>
-    <div className="p-6 md:hidden fixed top-0 z-10 right-0" ><a href=""></a><IoMdMenu className="text-black float-right text-3xl" />
+    <div className=" md:hidden fixed top-0 z-20 right-0" >
+      <a href="" onClick={handleClick} className="mx-1 my-1 p-2 block z-10  transition-transform duration-300"><IoMdMenu className="text-purple-400 text-3xl" />
+      </a>
     </div>
-    <div className="hidden md:fixed top-0 left-0 flex justify-between bg-black w-full z-10">
+    <div className=" fixed top-0 left-0 md:flex  justify-between bg-black opacity-80 w-full z-10" style={{ display: isDivVisible ? "block" : "none" }}>
       <div className="w-1/4 hidden  md:flex justify-center">
         <a href="#">
           <img src={logo} alt="logo" className="w-16 h-16 my-1" />
@@ -15,7 +23,7 @@ const Nav = () => {
       </div>
       <div className="md:w-3/4 w-full">
       
-        <ul className="md:flex  justify-center items-center h-full">
+        <ul className="md:flex justify-center items-center h-full">
           <li className="nav-li ">
             <a
               href=""

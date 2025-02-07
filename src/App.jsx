@@ -73,8 +73,7 @@ const App = () => {
               <ContentSection
                 title={"skill"}
                 content={
-                  " is Math because I am interested in counting the numbers. Other subjects are all interesting and I love them. In the future, I hope that I can become an excellent doctor to help everyone have good health. I promise to study harder to achieve my dream as soon as possible. "
-                }
+"Throughout my university studies, I had the opportunity to engage with and master various programming languages, frameworks, and development tools such as IDEs. Consequently, I hope that the skills I have acquired will play a significant role in shaping my career path and provide robust support for my future endeavors."                }
               />
               <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
                 using now :
