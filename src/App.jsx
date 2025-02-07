@@ -64,44 +64,56 @@ const App = () => {
 
           <div className="about w-full">
             <div className="md:w-1/2 mx-auto text-center ">
-              <ContentSection
-                title={"About"}
-                content={"My name is Nguyen Quang Tien, and I am currently a student majoring in Information Technology at Saigon University (SGU), living in Ho Chi Minh City."
-                }
-              />
-              <AboutDetail />
-              <ContentSection
-                title={"skill"}
-                content={
-"Throughout my university studies, I had the opportunity to engage with and master various programming languages, frameworks, and development tools such as IDEs. Consequently, I hope that the skills I have acquired will play a significant role in shaping my career path and provide robust support for my future endeavors."                }
-              />
-              <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
-                using now :
-              </h1>
-              <SkillDetail skills={skillsData} />
-              <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
-                Learning :
-              </h1>
-              <SkillDetail skills={skillsLearning} />
-              <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
-                Other Skills :
-              </h1>
-              <SkillDetail skills={otherSkills} />
+              <div id="About">
+                <ContentSection
+                  title={"About"}
+                  content={
+                    "My name is Nguyen Quang Tien, and I am currently a student majoring in Information Technology at Saigon University (SGU), living in Ho Chi Minh City."
+                  }
+                />
+                <AboutDetail />
+              </div>
+
+              <div id="Skills">
+                <ContentSection
+                  title={"skill"}
+                  content={
+                    "Throughout my university studies, I had the opportunity to engage with and master various programming languages, frameworks, and development tools such as IDEs. Consequently, I hope that the skills I have acquired will play a significant role in shaping my career path and provide robust support for my future endeavors."
+                  }
+                />
+                <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
+                  using now :
+                </h1>
+                <SkillDetail skills={skillsData} />
+                <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
+                  Learning :
+                </h1>
+                <SkillDetail skills={skillsLearning} />
+                <h1 className="md:px-0 md:mt-0 mt-4 px-2 uppercase text-2xl font-bold text-start ">
+                  Other Skills :
+                </h1>
+                <SkillDetail skills={otherSkills} />
+              </div>
             </div>
           </div>
         </div>
-        <div className=" bg-black text-center md:mx-auto md:w-full mb-20">
-          <ContentSection title={"Portfolio"}/>
+        <div id="Portfolio">
+          <div className=" bg-black text-center md:mx-auto md:w-full mb-20">
+            <ContentSection title={"Portfolio"} />
+          </div>
         </div>
-        <div className="md:w-1/2 mx-auto text-center">
-          <Project />
+        <div id="Contact">
+          <div className="md:w-1/2 mx-auto text-center">
+            <Project />
 
-          <ContentSection
-            title={"Contact "}
-            content={"Please provide your name, email, and message."}
-          />
-          <Formcontact />
+            <ContentSection
+              title={"Contact "}
+              content={"Please provide your name, email, and message."}
+            />
+            <Formcontact />
+          </div>
         </div>
+
         <div className="footer bg-black">
           <Footerpage />
         </div>

@@ -26,7 +26,7 @@ const Nav = () => {
         <ul className="md:flex justify-center items-center h-full">
           <li className="nav-li ">
             <a
-              href=""
+              href="#About"
               className="nav-a "
             >
               About
@@ -34,7 +34,7 @@ const Nav = () => {
           </li>
           <li className="nav-li">
             <a
-              href=""
+              href="#Skills"
               className=" nav-a "
             >
               Skills
@@ -42,7 +42,7 @@ const Nav = () => {
           </li>
           <li className="nav-li">
             <a
-              href=""
+              href="#Portfolio"
               className=" nav-a  "
             >
               Portfolio
@@ -50,7 +50,7 @@ const Nav = () => {
           </li>
           <li className="nav-li">
             <a
-              href=""
+              href="#Contact"
               className=" nav-a"
             >
               Contact
