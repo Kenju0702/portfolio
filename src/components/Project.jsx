@@ -5,9 +5,9 @@ import {motion} from "framer-motion";
 export const Project = () => {
   return (
     <div className="w-full flex flex-col gap-16 md:px-0 px-2 text-start">
-      <div className=" project ">
+      <div className=" project">
         {/* Phần Text - Đè lên Ảnh */}
-        <motion.div className="md:mb-80  order-1 w-full 2xl:absolute "
+        <motion.div className="2xl:mb-80  order-1 w-full 2xl:absolute "
           initial={{opacity: 0, x: -20}}
           whileInView={{opacity: 1, x: 0}}
           transition={{duration: 1.5}}
