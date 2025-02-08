@@ -2,18 +2,22 @@ import React from "react";
 import "../index.css";
 export const Project = () => {
   return (
-    <div className="w-full flex flex-col gap-16 md:px-0 px-2">
+    <div className="w-full flex flex-col gap-16 md:px-0 px-2 text-start">
       <div className=" project ">
         {/* Phần Text - Đè lên Ảnh */}
-        <div className=" project-Text 2xl:absolute 2xl:left-0">
+        <div className=" project-Text 2xl:absolute 2xl:left-0 md:h-[325px]">
           <h4 className="text-purple-400 font-bold uppercase tracking-wide">
-            Featured Project
+            ClothStore
           </h4>
-          <h1 className="2xl:text-xl text-2xl font-extrabold my-2">ClothStore</h1>
-          <p className="text-base leading-relaxed ">
-            A web app for visualizing personalized Spotify data. View your top
-            artists, top tracks, recently played tracks, and detailed audio
-            information about each track. Create and save new playlists of
+          <h1 className="2xl:text-lg text-xl font-extrabold my-2">
+            November 2023 – January 2024
+          </h1>
+          <p className="text-base leading-relaxed text-start">
+            ClothStore is an e-commerce website project that marked my first
+            foray into freelance web development. Working on this project was a
+            pivotal learning experience, as it challenged me to combine design,
+            functionality., and user experience into a seamless online shopping
+            platform
           </p>
         </div>
 
@@ -28,15 +32,20 @@ export const Project = () => {
       </div>
       <div className=" project ">
         {/* Phần Text - Đè lên Ảnh */}
-        <div className=" project-Text 2xl:absolute 2xl:right-0">
+        <div className=" project-Text 2xl:absolute 2xl:right-0 md:h-[325px]">
           <h4 className="text-purple-400 font-bold uppercase tracking-wide">
-            Featured Project
+            excavator
           </h4>
-          <h1 className="2xl:text-xl text-2xl font-extrabold my-2">LandingPage</h1>
+          <h1 className="2xl:text-lg text-xl font-extrabold my-2">
+            July 2024 - August 2024
+          </h1>
           <p className="text-base leading-relaxed ">
-            A web app for visualizing personalized Spotify data. View your top
-            artists, top tracks, recently played tracks, and detailed audio
-            information about each track. Create and save new playlists of
+            Excavator Landing is a comprehensive project developed to create a
+            dynamic and engaging landing page specifically tailored for the
+            heavy equipment industry. The goal was to deliver an immersive
+            online experience that not only highlights the features of modern
+            excavators but also serves as an effective lead generation tool for
+            potential clients
           </p>
         </div>
 
@@ -51,15 +60,20 @@ export const Project = () => {
       </div>
       <div className=" project ">
         {/* Phần Text - Đè lên Ảnh */}
-        <div className=" project-Text 2xl:absolute 2xl:left-0">
+        <div className=" project-Text 2xl:absolute 2xl:left-0 md:h-[325px]">
           <h4 className="text-purple-400 font-bold uppercase tracking-wide">
-            Featured Project
+            VietgroupEduNet{" "}
           </h4>
-          <h1 className="2xl:text-xl text-2xl font-extrabold my-2">VietgroupEduNet</h1>
+          <h1 className="2xl:text-xl text-2xl font-extrabold my-2">
+          September 2024 – January 2025
+          </h1>
           <p className="text-base leading-relaxed ">
-            A web app for visualizing personalized Spotify data. View your top
-            artists, top tracks, recently played tracks, and detailed audio
-            information about each track. Create and save new playlists of
+            During my internship, I supported the development of
+            VietgroupEduNet, an HR management website designed specifically for
+            Vietroupedu. This project aimed to streamline and automate various
+            HR processes, providing an efficient tool for managing employee
+            records, attendance, performance evaluations, and internal
+            communications.
           </p>
         </div>
 

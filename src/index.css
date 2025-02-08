@@ -1,27 +1,39 @@
 @import "tailwindcss";
 
 
+*{
+        font-family: Arial, Helvetica, sans-serif;
+        /* không còn dấu nhấy */
+        caret-color: transparent; 
+
+
+}
+
 /* nav */
 .nav-a{
-    @apply text-base w-full  inline-block md:bg-black md:text-white font-bold text-purple-500  py-2 px-4 md:border-none md:border-white border-b-2; /* Áp dụng màu chữ và hover */
+    @apply text-base w-full  inline-block md:bg-black md:text-white font-bold text-purple-500  py-2 px-4 md:border-none md:border-white border-b-2;
 
 }
 
 .nav-a:hover{
-    @apply  md:hover:text-purple-500 md:rounded-full;
+    @apply  md:hover:text-purple-500 md:rounded-full md:cursor-pointer;
 
 }
 button{
-    @apply md:hover:text-purple-500
+    @apply md:hover:text-purple-500 md:cursor-pointer
 }
 .nav-li{
     @apply my-6 mx-6 lg:mx-12 text-center block;
 }
 
+/* slider */
+.slider-item {
+    @apply hover:opacity-60 shadow-lg border border-purple-400 rounded-md p-4 flex items-center justify-center
+}
+
 /* project */
 .project-Text{
     @apply   order-2  md:order-1 p-6 md:max-w-full 2xl:max-w-100 max-w-full text-justify bg-gradient-to-br  from-gray-800 to-gray-500 backdrop-blur-lg rounded-lg text-white;
-
 
 }
 
@@ -34,7 +46,8 @@ button{
     @apply relative flex max-w-6xl w-full items-center flex-wrap
 }
 
-.footer-icon{
+/* footer */
+.footer-icon a{
     @apply hover:opacity-60
 }
 

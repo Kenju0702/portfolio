@@ -17,19 +17,20 @@ const Slider = () => {
       style={{paddingTop: "56.25%", background: "#fff"}}
     >
       <div className=" imgslider absolute w-full h-full top-0 right-0 left-0 flex justify-end items-end bg-gray-500">
-        <div className="  text-center flex flex-col gap-3 justify-center md:w-[50%] w-full h-full items-center">
+        <div className="  text-center flex flex-col gap-3 justify-center md:w-[50%] w-full h-full items-center mt-2">
           <img
             src={logo}
             alt="Avatar"
-            className=" mt-8 lg:mt-0 w-40 h-40 md:w-48 md:h-48 rounded-full md:mb-8 mx-auto border-4 border-purple-500 p-2 shadow-lg  transition-transform duration-300 hover:scale-105"
+            className=" lg:mt-0 w-40 h-40 md:w-48 md:h-48 rounded-full  p-2 mx-auto border-4 border-purple-500  shadow-lg object-cover  transition-transform duration-300 hover:scale-105"
           />
 
           <h2 className="md:text-xl font-bold text-white p-0 lg:p-2">
             My name is Nguyen Quang Tien
           </h2>
-          <p className="md:block hidden text-gray-300 text-xl opacity-80 lg:py-2">
-            Currently, I am in my final year at the university. (Just one
-            subjects left before I graduate!){" "}
+          <p className="md:block hidden text-gray-300 text-xl md:w-1/2 opacity-80 lg:py-2">
+            Currently, I am in my final year at the university.
+            <br />
+            <span>(Just one subject left before I graduate!)</span>
           </p>
         </div>
       </div>
@@ -38,7 +39,9 @@ const Slider = () => {
         style={{clipPath: "polygon(0 0, 85% 0px, 100% 100%, 0% 100%)"}}
       >
         <div className="flex justify-center mt-18 lg:mt-4 flex-col  h-full w-full items-center lg:gap-4">
-          <span className="font-bold text-white text-lg lg:text-3xl my-3">Hi, I'm a </span>
+          <span className="font-bold text-white text-lg lg:text-3xl ">
+            Hi, I'm a{" "}
+          </span>
           <span className="font-bold text-white lg:text-5xl">
             {text} <Cursor cursorStyle="⚡" />
           </span>
@@ -47,17 +50,18 @@ const Slider = () => {
           </span>
           <br />
           <div className="flex gap-6 text-white">
-            <div className="  cursor-pointer hover:opacity-60 shadow-lg border border-amber-100 rounded-md p-4 flex items-center justify-center">
+            <div className="slider-item">
               <a href="https://github.com/Kenju0702">
-                <FaGithub className="text-xl" />
+                <FaGithub className="text-xl group-hover:opacity-60" />
               </a>
             </div>
-            <div className="  cursor-pointer hover:opacity-60 shadow-lg border border-amber-100 rounded-md p-4 flex items-center justify-center">
+
+            <div className=" slider-item">
               <a href="mailto:nguyenquangtienvn2022@gmail.com">
                 <MdOutlineAlternateEmail className="text-xl" />
               </a>
             </div>
-            <div className="  cursor-pointer hover:opacity-60 shadow-lg border border-amber-100 rounded-md p-4 flex items-center justify-center">
+            <div className=" slider-item">
               <a href="https://www.facebook.com/hihi.hi.kenju/">
                 <FaFacebook className="text-xl" />
               </a>

@@ -41,7 +41,7 @@ const Navigation = () => {
         <a
           href=""
           onClick={handleClick}
-          className="mx-1 my-1 p-2 z-10 transition-transform duration-300"
+          className=" py-4 px-2  z-10 block transition-transform duration-300"
         >
           <IoMdMenu className="text-purple-400 text-3xl" />
         </a>
@@ -53,8 +53,8 @@ const Navigation = () => {
         style={{ display: isDivVisible ? "flex" : "none" }}
       >
         <div className="w-1/4 hidden md:flex justify-center">
-          <a href="#">
-            <img src={logo} alt="logo" className="w-16 h-16 my-1" />
+          <a href="#" className="inline-block">
+            <img src={logo} alt="logo" className="h-full w-auto object-contain object-cover" />
           </a>
         </div>
         <div className="md:w-3/4 w-full">

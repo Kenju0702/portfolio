@@ -15,7 +15,7 @@ const AboutDetail = () => {
           </h1>
           <p className="md:text-lg mt-6 px-4">
             {" "}
-            playing games, listening to music, reading books, and doing sports.{" "}
+            Playing games, listening to music, reading books, and doing sports.{" "}
           </p>
         </div>
         <div className="mt-8">
@@ -26,7 +26,7 @@ const AboutDetail = () => {
           </h1>
           <p className="md:text-lg mt-6  px-4 ">
             {" "}
-            Good communication,effective teamwork, adaptability, and
+            Good communication, effective teamwork, adaptability, and
             flexibility.{" "}
           </p>
         </div>
