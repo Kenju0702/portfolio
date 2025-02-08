@@ -1,7 +1,14 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 const Formcontact = () => {
   return (
+    <motion.div
+    initial={{opacity: 0, y: 10}}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{duration: 1}}
+    viewport={{once: true}}
+  >
     <div className=" ">
       <form action="" className="grid grid-cols-1 py-4 gap-8 md:px-0 px-2 md:mt-0 mt-8">
         <div className="grid grid-cols-2 gap-8">
@@ -15,6 +22,8 @@ const Formcontact = () => {
         </div>
       </form>
     </div>
+    </motion.div>
+
   );
 };
 

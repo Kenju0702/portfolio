@@ -5,6 +5,8 @@ import ContentSection from "./components/ContentSection";
 import AboutDetail from "./components/AboutDetail";
 import SkillDetail from "./components/Skilldetail";
 import "./index.css";
+import { motion } from 'framer-motion';
+
 
 import {
   FaHtml5,
@@ -56,12 +58,13 @@ const App = () => {
   ];
   return (
     <>
+   
       <Navigation />
       <div className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg text-white w-full">
         <div className="slider-carrer  w-full">
           <Slider />
           <CarrerObjective />
-
+         <div className="md:px-0 px-3">
           <div className="about w-full">
             <div className="md:w-1/2 mx-auto text-center ">
               <div id="About">
@@ -97,11 +100,14 @@ const App = () => {
             </div>
           </div>
         </div>
+        </div>
         <div id="Portfolio">
           <div className=" bg-black text-center md:mx-auto md:w-full mb-20">
             <ContentSection title={"Portfolio"} />
           </div>
         </div>
+        <div className="md:px-0 px-3">
+
         <div id="Contact">
           <div className="md:w-1/2 mx-auto text-center">
             <Project />
@@ -113,7 +119,7 @@ const App = () => {
             <Formcontact />
           </div>
         </div>
-
+        </div>
         <div className="footer bg-black">
           <Footerpage />
         </div>
