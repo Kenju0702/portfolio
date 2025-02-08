@@ -13,7 +13,7 @@ export default function ContentSection({title, content, button}) {
         viewport={{once: true}}
       >
         {" "}
-        <p className=" md:px-0 px-4 text-xl md:mb-8 text-start md:text-justify ">
+        <p className=" md:px-0 px-4 text-xl md:mb-8 text-start  ">
           {content}
         </p>
       </motion.div>

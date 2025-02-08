@@ -15,10 +15,10 @@ const Slider = () => {
   });
   return (
     <div
-      className="relative w-full h-3/4 z-10"
+      className="relative w-full h-3/4 z-10 md:py-30"
       style={{paddingTop: "56.25%", background: "#fff"}}
     >
-      <div className=" imgslider absolute w-full h-full top-0 right-0 left-0 flex justify-end items-end bg-black md:bg-gray-500">
+      <div className=" imgslider absolute w-full h-full top-0 right-0 left-0 flex justify-end items-end bg-black md:bg-gray-500" >
       <motion.div className="md:w-1/2 w-full h-full flex md:justify-center md:mb-8 text-start"
     initial={{opacity: 0, y: 50}}
     whileInView={{opacity: 1, y: 0}}
@@ -29,13 +29,13 @@ const Slider = () => {
           <img
             src={logo}
             alt="Avatar"
-            className=" lg:mt-0 w-40 h-40 md:w-48 md:h-48 rounded-full  p-2 mx-auto border-4 border-purple-500  shadow-lg object-cover  transition-transform duration-300 hover:scale-105"
+            className=" lg:mt-0 w-32 h-32 md:w-38 md:h-38  lg:w-48 lg:h-48 rounded-full  p-2 mx-auto border-4 border-purple-500  shadow-lg object-cover  transition-transform duration-300 hover:scale-105"
           />
 
-          <h2 className="md:text-xl font-bold text-white p-0 ">
+          <h2 className="md:text-lg font-bold text-white  ">
             My name is Nguyen Quang Tien
           </h2>
-          <p className="md:block hidden text-lg text-gray-300 xl:text-xl md:w-full opacity-80 ">
+          <p className="sm:block hidden text-lg text-gray-300 xl:text-xl md:w-full opacity-80 ">
             Currently, I am in my final year at the university.
             <br />
             <span className="">(Just one subject left before I graduate!)</span>
