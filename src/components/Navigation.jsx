@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/blob1.jpg";
 import { IoMdMenu } from "react-icons/io";
 
-const Nav = () => {
+const Navigation = () => {
   // Khởi tạo state hiển thị menu
   const [isDivVisible, setIsDivVisible] = useState(true);
 
@@ -86,4 +86,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navigation;

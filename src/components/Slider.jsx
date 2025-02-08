@@ -21,7 +21,7 @@ const Slider = () => {
           <img
             src={logo}
             alt="Avatar"
-            className=" mt-8 lg:mt-0 w-32 h-32 md:w-48 md:h-48 rounded-full md:mb-8 mx-auto border-4 border-purple-500 p-2 shadow-lg  transition-transform duration-300 hover:scale-105"
+            className=" mt-8 lg:mt-0 w-40 h-40 md:w-48 md:h-48 rounded-full md:mb-8 mx-auto border-4 border-purple-500 p-2 shadow-lg  transition-transform duration-300 hover:scale-105"
           />
 
           <h2 className="md:text-xl font-bold text-white p-0 lg:p-2">

@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "./components/Header";
 import Slider from "./components/Slider";
 import CarrerObjective from "./components/CarrerObjective";
 import ContentSection from "./components/ContentSection";
@@ -30,6 +29,7 @@ import {GrMysql} from "react-icons/gr";
 import {Project} from "./components/Project";
 import Formcontact from "./components/Formcontact";
 import Footerpage from "./components/Footer";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   const skillsData = [
@@ -56,7 +56,7 @@ const App = () => {
   ];
   return (
     <>
-      <Nav />
+      <Navigation />
       <div className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg text-white w-full">
         <div className="slider-carrer  w-full">
           <Slider />
