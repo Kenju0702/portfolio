@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import logo from "../assets/blob1.jpg";
-import { IoMdMenu } from "react-icons/io";
+import {IoMdMenu} from "react-icons/io";
 
 const Navigation = () => {
   // Khởi tạo state hiển thị menu
@@ -50,13 +50,14 @@ const Navigation = () => {
       {/* Navigation bar */}
       <div
         className="fixed top-0 left-0 justify-between bg-black opacity-80 w-full z-10"
-        style={{ display: isDivVisible ? "flex" : "none" }}
+        style={{display: isDivVisible ? "flex" : "none"}}
       >
         <div className="w-1/4 hidden md:flex justify-center">
-          <a href="#" className="inline-block">
-            <img src={logo} alt="logo" className="h-full w-auto object-contain object-cover" />
+          <a href="#" className="flex items-center h-full">
+            <img src={logo} alt="logo" className="h-18 w-auto object-cover" />
           </a>
         </div>
+
         <div className="md:w-3/4 w-full">
           <ul className="md:flex justify-center items-center h-full">
             <li className="nav-li">
