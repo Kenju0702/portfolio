@@ -7,7 +7,7 @@ export const Project = () => {
     <div className="w-full flex flex-col gap-16 md:px-0 px-2 text-start">
       <div className=" project ">
         {/* Phần Text - Đè lên Ảnh */}
-        <motion.div className="md:mb-80 order-1 w-full md:absolute overflow: default:"
+        <motion.div className="md:mb-80  order-1 w-full 2xl:absolute "
           initial={{opacity: 0, x: -20}}
           whileInView={{opacity: 1, x: 0}}
           transition={{duration: 1.5}}
@@ -41,7 +41,7 @@ export const Project = () => {
       </div>
       <div className=" project ">
         {/* Phần Text - Đè lên Ảnh */}
-        <motion.div className="md:mb-80 order-1 w-full md:absolute overflow: default:"
+        <motion.div className="md:mb-80  order-1 w-full 2xl:absolute "
           initial={{opacity: 0, x: 2}}
           whileInView={{opacity: 1, x: 0}}
           transition={{duration: 1.5}}
@@ -74,15 +74,15 @@ export const Project = () => {
           />
         </div>
       </div>
-      <div className=" project ">
+      <div className=" project  relative">
         {/* Phần Text - Đè lên Ảnh */}
-        <motion.div className="md:mb-80 order-1 w-full md:absolute md:overflow: default:"
+        <motion.div className="md:mb-80  order-1 w-full 2xl:absolute "
           initial={{opacity: 0, x: -20}}
           whileInView={{opacity: 1, x: 0}}
           transition={{duration: 1.5}}
           viewport={{once: true}}
         >
-        <div className=" project-Text 2xl:absolute 2xl:left-0 md:h-[325px]">
+        <div className=" project-Text md:absolute md:left-0  md:h-[325px]">
           <h4 className="text-purple-400 font-bold uppercase tracking-wide">
             VietgroupEduNet{" "}
           </h4>
