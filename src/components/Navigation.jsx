@@ -37,7 +37,7 @@ const Navigation = () => {
   return (
     <>
       {/* Nút menu hiển thị trên mobile (ẩn trên md trở lên) */}
-      <div className="md:hidden fixed top-0 z-20 right-0">
+      <div className="md:hidden fixed top-0 z-20 right-0 scroll-smooth ">
         <a
           href=""
           onClick={handleClick}

@@ -60,7 +60,7 @@ const App = () => {
     <>
    
       <Navigation />
-      <div className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg text-white w-full">
+      <div className=" bg-gradient-to-br from-gray-950 to-gray-700 backdrop-blur-lg rounded-lg text-white w-full scroll-smooth">
         <div className="slider-carrer  w-full">
           <Slider />
           <CarrerObjective />
@@ -70,8 +70,7 @@ const App = () => {
               <div id="About">
                 <ContentSection
                   title={"About"}
-                  content={
-                    "My name is Nguyen Quang Tien, and I am currently a student majoring in Information Technology at Saigon University (SGU), living in Ho Chi Minh City."
+                  content={"Currently, I am a final-year Information Technology student at Saigon University (SGU) and living in Cu Chi, Ho Chi Minh City. Throughout my studies, I have built a solid foundation in programming, particularly with languages such as JavaScript, along with proficiency in using tools like Git and Postman."
                   }
                 />
                 <AboutDetail />
@@ -108,10 +107,10 @@ const App = () => {
         </div>
         <div className="md:px-0 px-3">
 
-        <div id="Contact">
+        
           <div className="md:w-1/2 mx-auto text-center">
             <Project />
-
+            <div id="Contact">
             <ContentSection
               title={"Contact "}
               content={"Please provide your name, email, and message."}

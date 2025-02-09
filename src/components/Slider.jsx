@@ -67,18 +67,18 @@ const Slider = () => {
           <br />
           <div className="flex gap-6 text-white">
             <div className="slider-item">
-              <a href="https://github.com/Kenju0702">
+              <a target="_blank" href="https://github.com/Kenju0702">
                 <FaGithub className="text-xl group-hover:opacity-60" />
               </a>
             </div>
 
             <div className=" slider-item">
-              <a href="mailto:nguyenquangtienvn2022@gmail.com">
+              <a target="_blank" href="mailto:nguyenquangtienvn2022@gmail.com">
                 <MdOutlineAlternateEmail className="text-xl" />
               </a>
             </div>
             <div className=" slider-item">
-              <a href="https://www.facebook.com/hihi.hi.kenju/">
+              <a target="_blank" href="https://www.facebook.com/hihi.hi.kenju/">
                 <FaFacebook className="text-xl" />
               </a>
             </div>

@@ -8,7 +8,9 @@
 
 
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 /* nav */
 .nav-a{
     @apply text-base w-full  inline-block md:bg-black md:text-white font-bold text-purple-500  py-2 px-4 md:border-none md:border-white border-b-2;
@@ -48,12 +50,12 @@ button{
 
 /* footer */
 .footer-icon a{
-    @apply hover:opacity-60
+    @apply hover:opacity-60 text-2xl
 }
 
 @media (max-width: 1565px) {
     .project-Text {
-        padding: 1.5rem; /* Tương đương p-6 */
+        padding: 1.5rem; 
         text-align: justify;
         background: linear-gradient(to bottom right, #1f2937, #6b7280); /* from-gray-800 to-gray-500 */
         backdrop-filter: blur(10px);

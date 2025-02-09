@@ -1,7 +1,8 @@
 import React from "react";
 import {FaAnglesUp} from "react-icons/fa6";
-import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import {  FaFacebookF, FaPhone } from "react-icons/fa";
 import { MdAlternateEmail } from "react-icons/md";
+import { SiZalo } from "react-icons/si";
 
 const Footerpage = () => {
   return (
@@ -16,17 +17,17 @@ const Footerpage = () => {
 
       <ul className=" flex justify-center gap-8 text-4xl py-2">
         <li className="footer-icon">
-          <a href=""><FaFacebook /></a>
+          <a target="_blank" href="https://www.facebook.com/hihi.hi.kenju"><FaFacebookF /></a>
         </li>
         <li className="footer-icon">
-          <a href=""><MdAlternateEmail /></a>
+          <a target="_blank" href="mailto:nguyenquangtienvn2022@gmail.com"><MdAlternateEmail /></a>
         </li>
         <li className="footer-icon">
-          <a href=""><FaGoogle />
+          <a target="_blank" href="https://zalo.me/0582200103"><SiZalo />
           </a>
         </li>
         <li className="footer-icon">
-          <a href=""><FaGithub />
+          <a target="_blank" href="tel:+84582200103"><FaPhone />
           </a>
         </li>
       </ul>
