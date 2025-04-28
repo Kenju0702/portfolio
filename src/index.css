@@ -35,7 +35,7 @@ button{
 
 /* project */
 .project-Text{
-    @apply   order-2  md:order-1 p-6 md:max-w-full 2xl:max-w-100 max-w-full text-justify bg-gradient-to-br  from-gray-800 to-gray-500 backdrop-blur-lg rounded-lg text-white;
+    @apply    p-6 md:max-w-full 2xl:max-w-100 max-w-full text-justify bg-gradient-to-br  from-gray-800 to-gray-500 backdrop-blur-lg rounded-lg text-white;
 
 }
 
