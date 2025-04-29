@@ -5,7 +5,7 @@ export const  ProjectItem = ({ image, title, date, desc, reverse }) => (
       {/* Phần Text - Đè lên Ảnh */}
       <motion.div
         className="md:w-[300px] w-full order-1 md:order-0"
-        initial={{ opacity: 0, x: -20 }}
+        initial={{ opacity: 0, x: reverse ? 20 : -20 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}

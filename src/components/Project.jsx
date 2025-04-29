@@ -5,11 +5,19 @@ import { ProjectItem } from "./ProjectItem";
 
 const projects = [
   {
-    title: "ClothStore",
-    date: "Dec 2022 – Mar 2023",
-    desc: "This is an e-commerce website designed for selling excavators, providing a convenient platform for product presentation and brand promotion.",
+    title: "ILCVN",
+    date: "Mar 2025 – Apr 2025",
+    desc: "This is a legal news website that allows for the publication of articles, updates, and legal news, providing a platform for sharing relevant legal information and insights.",
     image:
-      "https://raw.githubusercontent.com/Kaicity/Cloth-Store-Ecommerce/main/Cloth-Store-Client-FE/src/assets/Screenshot%202024-05-19%20235908.png",
+      "https://github.com/Kenju0702/portfolio/blob/main/src/assets/ilcvn.png?raw=true",
+    reverse: true,
+  },
+  {
+    title: "VGE Project",
+    date: "Sep 2024 – Dec 2024",
+    desc: "VGE is an innovative platform that manages collaborators and connects international students with global labor opportunities, streamlining talent sourcing and workforce collaboration.",
+    image:
+      "https://portfolio-kaicitys-projects.vercel.app/assets/img/projects/vge/vge.png",
     reverse: false,
   },
   {
@@ -21,11 +29,11 @@ const projects = [
     reverse: true,
   },
   {
-    title: "VGE Project",
-    date: "Sep 2024 – Dec 2024",
-    desc: "VGE is an innovative platform that manages collaborators and connects international students with global labor opportunities, streamlining talent sourcing and workforce collaboration.",
+    title: "ClothStore",
+    date: "Dec 2022 – Mar 2023",
+    desc: "This is an e-commerce website designed for selling excavators, providing a convenient platform for product presentation and brand promotion.",
     image:
-      "https://portfolio-kaicitys-projects.vercel.app/assets/img/projects/vge/vge.png",
+      "https://raw.githubusercontent.com/Kaicity/Cloth-Store-Ecommerce/main/Cloth-Store-Client-FE/src/assets/Screenshot%202024-05-19%20235908.png",
     reverse: false,
   },
 ];

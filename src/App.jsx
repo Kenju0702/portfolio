@@ -100,7 +100,7 @@ const App = () => {
           </div>
         </div>
         <div id="Portfolio">
-          <div className=" bg-black text-center md:mx-auto  md:w-1/2 mb-20">
+          <div className=" bg-black text-center md:mx-auto  md:w-full mb-20">
             <ContentSection title={"Portfolio"} />
           </div>
         </div>
