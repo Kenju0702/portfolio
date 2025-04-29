@@ -1,65 +1,61 @@
 @import "tailwindcss";
 
-
-*{
-        font-family: Arial, Helvetica, sans-serif;
-        /* không còn dấu nhấy */
-        caret-color: transparent; 
-
-
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  /* không còn dấu nhấy */
+  caret-color: transparent;
 }
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 /* nav */
-.nav-a{
-    @apply text-base w-full  inline-block md:bg-black md:text-white font-bold text-purple-500  py-2 px-4 md:border-none md:border-white border-b-2;
-
+.nav-a {
+  @apply text-base w-full  inline-block md:bg-black md:text-white font-bold text-purple-500  py-2 px-4 md:border-none md:border-white border-b-2;
 }
 
-.nav-a:hover{
-    @apply  md:hover:text-purple-500 md:rounded-full md:cursor-pointer;
-
+.nav-a:hover {
+  @apply md:hover:text-purple-500 md:rounded-full md:cursor-pointer;
 }
-button{
-    @apply md:hover:text-purple-500 md:cursor-pointer
+button {
+  @apply md:hover:text-purple-500 md:cursor-pointer;
 }
-.nav-li{
-    @apply my-6 mx-6 lg:mx-12 text-center block;
+.nav-li {
+  @apply my-6 mx-6 lg:mx-12 text-center block;
 }
 
 /* slider */
 .slider-item {
-    @apply hover:opacity-60 shadow-lg border border-purple-400 rounded-md p-4 flex items-center justify-center
+  @apply hover:opacity-60 shadow-lg border border-purple-400 rounded-md p-4 flex items-center justify-center;
 }
 
 /* project */
-.project-Text{
-    @apply    p-6 md:max-w-full 2xl:max-w-100 max-w-full text-justify bg-gradient-to-br  from-gray-800 to-gray-500 backdrop-blur-lg rounded-lg text-white;
-
+.project-Text {
+  @apply md:h-[300px] bg-gradient-to-br p-4  from-gray-800 to-gray-500 backdrop-blur-lg  text-white text-left;
 }
 
-
-.img-project{
-    @apply  w-full flex 
+.img-project {
+  @apply w-full flex h-full;
 }
 
-.project{
-    @apply relative flex max-w-6xl w-full items-center flex-wrap
+.project {
+  @apply relative flex max-w-6xl w-full items-center flex-wrap;
 }
 
 /* footer */
-.footer-icon a{
-    @apply hover:opacity-60 text-2xl
+.footer-icon a {
+  @apply hover:opacity-60 text-2xl;
 }
 
 @media (max-width: 1565px) {
-    .project-Text {
-        padding: 1.5rem; 
-        text-align: justify;
-        background: linear-gradient(to bottom right, #1f2937, #6b7280); /* from-gray-800 to-gray-500 */
-        backdrop-filter: blur(10px);
-        border-radius: 0.5rem; /* rounded-lg */
-        color: white;
-    }
+  .project-Text {
+    text-align: left;
+    background: linear-gradient(
+      to bottom right,
+      #1f2937,
+      #6b7280
+    ); /* from-gray-800 to-gray-500 */
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem; /* rounded-lg */
+    color: white;
+  }
 }
